@@ -68,7 +68,7 @@ const Details = () => {
             {/* <!-- Color --> */}
             <div className="product-color fix">
               <h5>Select Color</h5>
-              <form action="#">
+              <form>
                 <div className="color-box">
                   <input type="radio" name="color" id="color-1" />
                   <label htmlFor="color-1" style={{ backgroundColor: '#51bd99' }}>

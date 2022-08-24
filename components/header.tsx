@@ -33,7 +33,7 @@ const Header = () => {
 
                   {/* <!-- Header Logo --> */}
                   <div className="header-logo col-md-4 col-12">
-                    <a href="index.html" className="logo">
+                    <a href="/" className="logo">
                       <img src="/img/logo.png" alt="logo" />
                     </a>
                   </div>
@@ -121,7 +121,7 @@ const Header = () => {
             <div className="header-bottom-wrapper text-center col">
               {/* <!-- Header Bottom Logo --> */}
               <div className="header-bottom-logo">
-                <a href="index.html" className="logo">
+                <a href="/" className="logo">
                   <img src="/img/logo.png" alt="logo" />
                 </a>
               </div>
@@ -130,7 +130,7 @@ const Header = () => {
               <nav id="main-menu" className="main-menu">
                 <ul>
                   <li className="active">
-                    <a href="index.html">home</a>
+                    <a href="/">home</a>
                   </li>
                   <li>
                     <a href="/shop">shop</a>
@@ -189,7 +189,7 @@ const Header = () => {
 
                 {/* <!-- Search Form --> */}
                 <div className="header-search-form">
-                  <form action="#">
+                  <form>
                     <input type="text" placeholder="Search..." />
                     <button>
                       <i className="ion-ios-search-strong"></i>

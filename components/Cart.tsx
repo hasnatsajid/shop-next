@@ -100,7 +100,7 @@ const Cart = () => {
               <div className="cart-cuppon col-lg-4 col-md-6 col-12 mb-30">
                 <h4 className="title">Discount Code</h4>
                 <p>Enter your coupon code if you have</p>
-                <form action="#" className="cuppon-form">
+                <form className="cuppon-form">
                   <input type="text" placeholder="Cuppon Code" />
                   <button className="button">apply coupon</button>
                 </form>

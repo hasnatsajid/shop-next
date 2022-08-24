@@ -21,7 +21,7 @@ const Checkout = () => {
                       <li data-form="checkout-register-form">Register</li>
                     </ul>
 
-                    <form action="#" className="checkout-login-form">
+                    <form className="checkout-login-form">
                       <div className="row">
                         <div className="input-box col-md-6 col-12 mb-20">
                           <input type="email" placeholder="Email Address" />
@@ -35,7 +35,7 @@ const Checkout = () => {
                       </div>
                     </form>
 
-                    <form action="#" className="checkout-register-form">
+                    <form className="checkout-register-form">
                       <div className="row">
                         <div className="input-box col-md-6 col-12 mb-20">
                           <input type="text" placeholder="Your Name" />
@@ -65,7 +65,7 @@ const Checkout = () => {
                 </a>
                 <div id="billing-method" className="collapse">
                   <div className="accordion-body billing-method fix">
-                    <form action="#" className="billing-form checkout-form">
+                    <form className="billing-form checkout-form">
                       <div className="row">
                         <div className="col-12 mb-20">
                           <select>
@@ -130,7 +130,7 @@ const Checkout = () => {
 
                     <button className="shipping-form-toggle">Ship to a different address?</button>
 
-                    <form action="#" className="shipping-form checkout-form">
+                    <form className="shipping-form checkout-form">
                       <div className="row">
                         <div className="col-12 mb-20">
                           <select>
@@ -193,7 +193,7 @@ const Checkout = () => {
                       <li className="payment-form-toggle">credit card</li>
                     </ul>
 
-                    <form action="#" className="payment-form">
+                    <form className="payment-form">
                       <div className="row">
                         <div className="input-box col-12 mb-20">
                           <label htmlFor="card-name">Name on Card *</label>
@@ -268,7 +268,7 @@ const Checkout = () => {
             <div className="order-details-wrapper">
               <h2>your order</h2>
               <div className="order-details">
-                <form action="#">
+                <form>
                   <ul>
                     <li>
                       <p className="strong">product</p>
