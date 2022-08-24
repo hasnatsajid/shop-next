@@ -1,13 +1,18 @@
-import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
+import { removeFromCart } from '../store/slices/cartSlice';
+import { useSelector, useDispatch } from 'react-redux';
 
 const Cart = () => {
   const cartItems = useSelector((state: RootState) => state.cart);
+  const dispatch = useDispatch();
 
-  const removeFromCart = (e) => {
-    // e.preventDefault();
-    console.log(e.tabIndex);
-    console.log(e.target.dataset.testId);
+  const onRemoveFromCart = (e) => {
+    const itemId = +e.target.dataset.object;
+    const targetItem = cartItems.find((item) => item.id === itemId);
+
+    if (targetItem) {
+      dispatch(removeFromCart(targetItem));
+    }
   };
 
   return (
@@ -68,8 +73,8 @@ const Cart = () => {
                           <p className="cart-price-total">${item.price}</p>
                         </td>
                         <td>
-                          <button className="cart-pro-remove" data-test-id={item.id} onClick={removeFromCart}>
-                            <i className="fa fa-trash-o"></i>
+                          <button className="cart-pro-remove">
+                            <i className="fa fa-trash-o" data-object={item.id} onClick={onRemoveFromCart}></i>
                           </button>
                         </td>
                       </tr>
