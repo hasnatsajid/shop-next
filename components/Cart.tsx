@@ -4,6 +4,12 @@ import { RootState } from '../store/store';
 const Cart = () => {
   const cartItems = useSelector((state: RootState) => state.cart);
 
+  const removeFromCart = (e) => {
+    // e.preventDefault();
+    console.log(e.tabIndex);
+    console.log(e.target.dataset.testId);
+  };
+
   return (
     <div className="cart-section section pt-120 pb-90">
       <div className="container">
@@ -28,33 +34,41 @@ const Cart = () => {
                 <tbody>
                   {cartItems.length > 0 ? (
                     cartItems.map((item, index) => (
-                      <tr>
+                      <tr key={item.id}>
                         <td>
-                          <span className="cart-number">{index}</span>
+                          <span className="cart-number">{index + 1}</span>
                         </td>
                         <td>
                           <a href="#" className="cart-pro-image">
-                            <img src="img/product/1.jpg" alt="" />
+                            <img src={item.image} alt="" />
                           </a>
                         </td>
                         <td>
                           <a href="#" className="cart-pro-title">
-                            Holiday Candle
+                            {item.name}
                           </a>
                         </td>
                         <td>
                           <div className="product-quantity">
-                            <input type="text" value="0" name="qtybox" />
+                            <span className="dec qtybtn">
+                              <i className="fa fa-angle-left"></i>
+                            </span>
+                            <input type="text" name="qtybox" />
+                            <span className="inc qtybtn">
+                              <i className="fa fa-angle-right"></i>
+                            </span>
+
+                            {/* <input type="text" value="0" name="qtybox" /> */}
                           </div>
                         </td>
                         <td>
-                          <p className="cart-pro-price">$104.99</p>
+                          <p className="cart-pro-price">${item.price}</p>
                         </td>
                         <td>
-                          <p className="cart-price-total">$104.99</p>
+                          <p className="cart-price-total">${item.price}</p>
                         </td>
                         <td>
-                          <button className="cart-pro-remove">
+                          <button className="cart-pro-remove" data-test-id={item.id} onClick={removeFromCart}>
                             <i className="fa fa-trash-o"></i>
                           </button>
                         </td>
@@ -62,7 +76,7 @@ const Cart = () => {
                     ))
                   ) : (
                     <tr className="text-center cart-table">
-                      <h3 className="m-3 text-center full-width">No items to show :)</h3>
+                      <td className="m-3 text-center full-width">No items to show :)</td>
                     </tr>
                   )}
                 </tbody>

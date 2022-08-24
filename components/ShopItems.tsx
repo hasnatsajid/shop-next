@@ -2,19 +2,25 @@ import Link from 'next/link';
 
 import { products } from '../utils/products';
 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../store/slices/cartSlice';
+import { RootState } from '../store/store';
 
 const ShopItems = () => {
+  const storeItems = useSelector((state: RootState) => state.cart);
   const dispatch = useDispatch();
+
+  console.log(storeItems);
 
   const onAddingToCart = (e) => {
     e.preventDefault();
     const productId = +e.target.dataset.productId;
 
+    const existInStore = storeItems.find((item) => item.id === productId);
+
     const product = products.find((item) => item.id === productId);
 
-    if (product) dispatch(addToCart(product));
+    if (product && !existInStore) dispatch(addToCart(product));
   };
 
   return (

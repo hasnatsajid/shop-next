@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 
@@ -136,10 +137,10 @@ const Header = () => {
                     <a href="/">home</a>
                   </li>
                   <li>
-                    <a href="/shop">shop</a>
+                    <Link href="/shop">shop</Link>
                     <ul className="sub-menu">
                       <li>
-                        <a href="/shop">shop page</a>
+                        <Link href="/shop">shop page</Link>
                       </li>
                       <li>
                         <a href="/product">product details</a>
@@ -147,16 +148,16 @@ const Header = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href="about.html">about</a>
+                    <Link href="/about">about</Link>
                   </li>
                   <li>
                     <a href="#">pages</a>
                     <ul className="sub-menu">
                       <li>
-                        <a href="/cart">cart</a>
+                        <Link href="/cart">cart</Link>
                       </li>
                       <li>
-                        <a href="/checkout">checkout</a>
+                        <Link href="/checkout">checkout</Link>
                       </li>
                       <li>
                         <a href="wishlist.html">wishlist</a>

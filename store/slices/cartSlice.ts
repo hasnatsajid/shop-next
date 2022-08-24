@@ -2,10 +2,11 @@ import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
 interface CartItem {
-  id: Number;
-  name: String;
-  image: String;
-  price: Number;
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+  children?: JSX.Element | JSX.Element[];
 }
 [];
 
