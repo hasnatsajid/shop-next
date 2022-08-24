@@ -3,13 +3,13 @@ const FooterMobile = () => {
     <div className="mobile-footer">
       <div className="mobile-footer-inner">
         <div className="mobile-block block-menu-main">
-          <a className="menu-bar menu-toggle btn-toggle" data-object="open-mobile-menu" href="javascript:void(0)">
+          <a className="menu-bar menu-toggle btn-toggle" data-object="open-mobile-menu" href="">
             <span className="fa fa-bars"></span>
             <span className="text">Menu</span>
           </a>
         </div>
         <div className="mobile-block block-sidebar">
-          <a className="menu-bar filter-toggle btn-toggle" data-object="open-mobile-filter" href="javascript:void(0)">
+          <a className="menu-bar filter-toggle btn-toggle" data-object="open-mobile-filter" href="">
             <i className="fa fa-sliders" aria-hidden="true"></i>
             <span className="text">Sidebar</span>
           </a>
@@ -21,7 +21,7 @@ const FooterMobile = () => {
           </a>
         </div>
         <div className="mobile-block block-global">
-          <a className="menu-bar myaccount-toggle btn-toggle" data-object="global-panel-opened" href="javascript:void(0)">
+          <a className="menu-bar myaccount-toggle btn-toggle" data-object="global-panel-opened" href="">
             <span className="fa fa-globe"></span>
             <span className="text">Global</span>
           </a>

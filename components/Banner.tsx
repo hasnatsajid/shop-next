@@ -1,205 +1,37 @@
 const Banner = () => {
   return (
-    <div>
-      <div className="special-slide">
-        <div className="container">
-          <ul
-            className="biolife-carousel dots_ring_style"
-            data-slick='{"arrows": false, "dots": true, "slidesMargin": 30, "slidesToShow": 1, "infinite": true, "speed": 800, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 1}},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin":20, "dots": false}},{"breakpoint":480, "settings":{ "slidesToShow": 1}}]}'
-          >
-            <li>
-              <div className="slide-contain biolife-banner__special">
-                <div className="banner-contain">
-                  <div className="media">
-                    <a href="#" className="bn-link">
-                      <figure>
-                        <img src="/images/home-03/bn_special_org.jpg" width="616" height="483" alt="" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div className="text-content">
-                    <b className="first-line">Pomegranate</b>
-                    <span className="second-line">Organic Heaven Made</span>
-                    <span className="third-line">
-                      Easy <i>Healthy, Happy Life</i>
-                    </span>
-                    <div className="product-detail">
-                      <h4 className="product-name">National Fresh Fruit Production</h4>
-                      <div className="price price-contain">
-                        <ins>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>85.00
-                          </span>
-                        </ins>
-                        <del>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>95.00
-                          </span>
-                        </del>
-                      </div>
-                      <div className="buttons">
-                        <a href="#" className="btn add-to-cart-btn">
-                          add to cart
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <div className="banner-section section pt-120">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-12 mb-30">
+            <div className="single-banner">
+              <img src="img/banner/1.jpg" alt="banner" />
+              <div className="banner-content right">
+                <h1 className="white">
+                  <span>Gifts</span>Christmas
+                </h1>
+                <a href="#" className="button">
+                  Shop Now
+                </a>
               </div>
-            </li>
-            <li>
-              <div className="slide-contain biolife-banner__special">
-                <div className="banner-contain">
-                  <div className="media">
-                    <a href="#" className="bn-link">
-                      <figure>
-                        <img src="/images/home-03/bn_special_org.jpg" width="616" height="483" alt="" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div className="text-content">
-                    <b className="first-line">Pomegranate</b>
-                    <span className="second-line">Organic Heaven Made</span>
-                    <span className="third-line">
-                      Easy <i>Healthy, Happy Life</i>
-                    </span>
-                    <div className="product-detail">
-                      <h4 className="product-name">National Fresh Fruit Production</h4>
-                      <div className="price price-contain">
-                        <ins>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>85.00
-                          </span>
-                        </ins>
-                        <del>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>95.00
-                          </span>
-                        </del>
-                      </div>
-                      <div className="buttons">
-                        <a href="#" className="btn add-to-cart-btn">
-                          add to cart
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 col-12 mb-30">
+            <div className="single-banner">
+              <img src="img/banner/2.jpg" alt="banner" />
+              <div className="banner-content left">
+                <h2 className="black">
+                  <span className="small">
+                    Save <span className="red">25%</span>
+                  </span>
+                  <span className="red">Offer</span> Christmas
+                </h2>
+                <a href="#" className="link">
+                  Shop Now
+                </a>
               </div>
-            </li>
-            <li>
-              <div className="slide-contain biolife-banner__special">
-                <div className="banner-contain">
-                  <div className="media">
-                    <a href="#" className="bn-link">
-                      <figure>
-                        <img src="/images/home-03/bn_special_org.jpg" width="616" height="483" alt="" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div className="text-content">
-                    <b className="first-line">Pomegranate</b>
-                    <span className="second-line">Organic Heaven Made</span>
-                    <span className="third-line">
-                      Easy <i>Healthy, Happy Life</i>
-                    </span>
-                    <div className="product-detail">
-                      <h4 className="product-name">National Fresh Fruit Production</h4>
-                      <div className="price price-contain">
-                        <ins>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>85.00
-                          </span>
-                        </ins>
-                        <del>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>95.00
-                          </span>
-                        </del>
-                      </div>
-                      <div className="buttons">
-                        <a href="#" className="btn add-to-cart-btn">
-                          add to cart
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="slide-contain biolife-banner__special">
-                <div className="banner-contain">
-                  <div className="media">
-                    <a href="#" className="bn-link">
-                      <figure>
-                        <img src="/images/home-03/bn_special_org.jpg" width="616" height="483" alt="" />
-                      </figure>
-                    </a>
-                  </div>
-                  <div className="text-content">
-                    <b className="first-line">Pomegranate</b>
-                    <span className="second-line">Organic Heaven Made</span>
-                    <span className="third-line">
-                      Easy <i>Healthy, Happy Life</i>
-                    </span>
-                    <div className="product-detail">
-                      <h4 className="product-name">National Fresh Fruit Production</h4>
-                      <div className="price price-contain">
-                        <ins>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>85.00
-                          </span>
-                        </ins>
-                        <del>
-                          <span className="price-amount">
-                            <span className="currencySymbol">£</span>95.00
-                          </span>
-                        </del>
-                      </div>
-                      <div className="buttons">
-                        <a href="#" className="btn add-to-cart-btn">
-                          add to cart
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div className="biolife-service type01 biolife-service__type01 sm-margin-top-0 xs-margin-top-45px">
-            <b className="txt-show-01">100%Nature</b>
-            <i className="txt-show-02">Fresh Fruits</i>
-            <ul className="services-list">
-              <li>
-                <div className="service-inner">
-                  <span className="number">1</span>
-                  <span className="biolife-icon icon-beer"></span>
-                  <a className="srv-name" href="#">
-                    full stamped product
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div className="service-inner">
-                  <span className="number">2</span>
-                  <span className="biolife-icon icon-schedule"></span>
-                  <a className="srv-name" href="#">
-                    place and delivery on time
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div className="service-inner">
-                  <span className="number">3</span>
-                  <span className="biolife-icon icon-car"></span>
-                  <a className="srv-name" href="#">
-                    Free shipping in the city
-                  </a>
-                </div>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
