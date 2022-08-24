@@ -1,7 +1,10 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/store';
 
 const Header = () => {
+  const cartItems = useSelector((state: RootState) => state.cart);
+  const cartItemCount = cartItems.length;
+
   return (
     <div className="header-section section">
       {/* <!-- Header Top Start --> */}
@@ -50,7 +53,7 @@ const Header = () => {
                       <li>
                         <a href="#" data-toggle="dropdown">
                           <i className="fa fa-shopping-cart"></i>
-                          <span className="num">2</span>
+                          <span className="num">{cartItemCount}</span>
                         </a>
 
                         {/* <!-- Mini Cart --> */}

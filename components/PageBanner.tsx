@@ -1,6 +1,6 @@
 const PageBanner = ({ title }) => {
   return (
-    <div className="page-banner-section section" style={{ backgroundImage: 'url(img/bg/page-banner.jpg)' }}>
+    <div className="page-banner-section section" style={{ backgroundImage: 'url(/img/bg/page-banner.jpg)' }}>
       <div className="container">
         <div className="row">
           {/* <!-- Page Title Start --> */}

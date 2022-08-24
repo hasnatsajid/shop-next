@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="row">
                 {/* <!-- Footer Widget --> */}
                 <div className="footer-widget col-lg-4 col-md-6 col-12 mb-40">
-                  <img className="footer-logo" src="img/footer-logo.png" alt="logo" />
+                  <img className="footer-logo" src="/img/footer-logo.png" alt="logo" />
                   <p>
                     Contrary to popular belief, Lorem Ipsum is nosimply random text. It has roots in a piece of classical Latin literature from 45 BC, making it
                     over Lorem Ipsum is nosimply random text.

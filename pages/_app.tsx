@@ -6,7 +6,15 @@ import '../styles/font-awesome.min.css';
 import '../styles/ionicons.min.css';
 import '../styles/fonts.css';
 import '../styles/style.css';
+import { Provider } from 'react-redux';
+import { store } from '../store/store';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </>
+  );
 }

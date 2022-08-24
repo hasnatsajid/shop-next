@@ -1,4 +1,9 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '../store/store';
+
 const Cart = () => {
+  const cartItems = useSelector((state: RootState) => state.cart);
+
   return (
     <div className="cart-section section pt-120 pb-90">
       <div className="container">
@@ -14,75 +19,52 @@ const Cart = () => {
                     <th className="name">product name</th>
                     <th className="qty">quantity</th>
                     <th className="price">price</th>
-                    <th className="total">totle</th>
+                    <th className="total">total</th>
                     <th className="remove">remove</th>
                   </tr>
                 </thead>
 
                 {/* <!-- Table Body --> */}
                 <tbody>
-                  <tr>
-                    <td>
-                      <span className="cart-number">1</span>
-                    </td>
-                    <td>
-                      <a href="#" className="cart-pro-image">
-                        <img src="img/product/1.jpg" alt="" />
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" className="cart-pro-title">
-                        Holiday Candle
-                      </a>
-                    </td>
-                    <td>
-                      <div className="product-quantity">
-                        <input type="text" value="0" name="qtybox" />
-                      </div>
-                    </td>
-                    <td>
-                      <p className="cart-pro-price">$104.99</p>
-                    </td>
-                    <td>
-                      <p className="cart-price-total">$104.99</p>
-                    </td>
-                    <td>
-                      <button className="cart-pro-remove">
-                        <i className="fa fa-trash-o"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <span className="cart-number">2</span>
-                    </td>
-                    <td>
-                      <a href="#" className="cart-pro-image">
-                        <img src="img/product/2.jpg" alt="" />
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#" className="cart-pro-title">
-                        Christmas Tree
-                      </a>
-                    </td>
-                    <td>
-                      <div className="product-quantity">
-                        <input type="text" value="0" name="qtybox" />
-                      </div>
-                    </td>
-                    <td>
-                      <p className="cart-pro-price">$85.99</p>
-                    </td>
-                    <td>
-                      <p className="cart-price-total">$85.99</p>
-                    </td>
-                    <td>
-                      <button className="cart-pro-remove">
-                        <i className="fa fa-trash-o"></i>
-                      </button>
-                    </td>
-                  </tr>
+                  {cartItems.length > 0 ? (
+                    cartItems.map((item, index) => (
+                      <tr>
+                        <td>
+                          <span className="cart-number">{index}</span>
+                        </td>
+                        <td>
+                          <a href="#" className="cart-pro-image">
+                            <img src="img/product/1.jpg" alt="" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="#" className="cart-pro-title">
+                            Holiday Candle
+                          </a>
+                        </td>
+                        <td>
+                          <div className="product-quantity">
+                            <input type="text" value="0" name="qtybox" />
+                          </div>
+                        </td>
+                        <td>
+                          <p className="cart-pro-price">$104.99</p>
+                        </td>
+                        <td>
+                          <p className="cart-price-total">$104.99</p>
+                        </td>
+                        <td>
+                          <button className="cart-pro-remove">
+                            <i className="fa fa-trash-o"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    ))
+                  ) : (
+                    <tr className="text-center cart-table">
+                      <h3 className="m-3 text-center full-width">No items to show :)</h3>
+                    </tr>
+                  )}
                 </tbody>
               </table>
             </div>
