@@ -35,7 +35,7 @@ const ShopItems = () => {
               <div className="product">
                 <div className="image">
                   <Link href={`/product/${product.id}`} className="img">
-                    <img src={product.image} alt="Product" />
+                    <img src={product.image} alt="Product Image" />
                   </Link>
                   <a href="/shop" className="wishlist">
                     <i className="fa fa-heart-o"></i>
