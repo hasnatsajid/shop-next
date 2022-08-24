@@ -59,13 +59,13 @@ const Header = () => {
                           <div className="all-cart-product clearfix">
                             <div className="single-cart clearfix">
                               <div className="cart-image">
-                                <a href="product-details.html">
+                                <a href="/product">
                                   <img src="/img/cart/1.jpg" alt="" />
                                 </a>
                               </div>
                               <div className="cart-info">
                                 <h5>
-                                  <a href="product-details.html">Holiday Candle</a>
+                                  <a href="/product">Holiday Candle</a>
                                 </h5>
                                 <p>1 x £9.00</p>
                                 <a href="#" className="cart-delete" title="Remove this item">
@@ -75,13 +75,13 @@ const Header = () => {
                             </div>
                             <div className="single-cart clearfix">
                               <div className="cart-image">
-                                <a href="product-details.html">
+                                <a href="/product">
                                   <img src="/img/cart/2.jpg" alt="" />
                                 </a>
                               </div>
                               <div className="cart-info">
                                 <h5>
-                                  <a href="product-details.html">Christmas Tree</a>
+                                  <a href="/product">Christmas Tree</a>
                                 </h5>
                                 <p>1 x £9.00</p>
                                 <a href="#" className="cart-delete" title="Remove this item">
@@ -98,7 +98,7 @@ const Header = () => {
                           </div>
                           {/* <!-- Cart Button --> */}
                           <div className="cart-bottom  clearfix">
-                            <a href="checkout.html">Check out</a>
+                            <a href="/checkout">Check out</a>
                           </div>
                         </div>
                       </li>
@@ -133,13 +133,13 @@ const Header = () => {
                     <a href="index.html">home</a>
                   </li>
                   <li>
-                    <a href="shop.html">shop</a>
+                    <a href="/shop">shop</a>
                     <ul className="sub-menu">
                       <li>
-                        <a href="shop.html">shop page</a>
+                        <a href="/shop">shop page</a>
                       </li>
                       <li>
-                        <a href="product-details.html">product details</a>
+                        <a href="/product">product details</a>
                       </li>
                     </ul>
                   </li>
@@ -150,10 +150,10 @@ const Header = () => {
                     <a href="#">pages</a>
                     <ul className="sub-menu">
                       <li>
-                        <a href="cart.html">cart</a>
+                        <a href="/cart">cart</a>
                       </li>
                       <li>
-                        <a href="checkout.html">checkout</a>
+                        <a href="/checkout">checkout</a>
                       </li>
                       <li>
                         <a href="wishlist.html">wishlist</a>

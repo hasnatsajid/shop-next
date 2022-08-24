@@ -14,9 +14,11 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <Meta />
-      <Header />
-      {children}
-      <Footer />
+      <div id="main-wrapper" className="section">
+        <Header />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 };
